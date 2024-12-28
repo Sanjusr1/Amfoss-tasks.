@@ -25,7 +25,7 @@ My task statistics are as shown-
 
 | Task List | Description | Status |
 | :-:       | :-:         | :-:    |
-| [Task-00]()   | Install Linux | Completed |
+| [Task-00](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-00)   | Install Linux | Completed |
 | [Task-01]()   |  |  |
 | [Task-02]()    | |  |
 | [Task-03]()   | | |
