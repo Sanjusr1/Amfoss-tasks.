@@ -15,4 +15,23 @@
 - WHAT ARE YOUR FIELDS OF INTEREST , AND HOW DO YOU PLAN ON WORKING ON THEM ?
 
    My fields of interest is AI and software development which is also one of the reasons for my btech branch , I like how AI makes our lives easy and solve many complex problems with ease.And I am interested in coding and developing projects . And to make them true I would work hard and plan on gaining more knowledge on AI and developing projects, I also try to do more projects on my field and try to get a deeper and a detailed knowledge about them . 
-not only them I am also interested in how ai used in the area of cyber like how it combines traditional cybersecurity skills with artificial intelligence to improve threat detection, prevention, and response. 
+not only them I am also interested in how ai used in the area of cyber like how it combines traditional cybersecurity skills with artificial intelligence to improve threat detection, prevention, and response.
+
+
+
+# Tasks Status
+
+My task statistics are as shown-
+
+| Task List | Description | Status |
+| :-:       | :-:         | :-:    |
+| [Task-00]()   | Install Linux | Completed |
+| [Task-01]()   |  |  |
+| [Task-02]()    | |  |
+| [Task-03]()   | | |
+| [Task-04]()   |  |  |
+| [Task-05]() |   |  |
+| [Task-06]()    | |  |
+| [Task-07]()  |  |  |
+| [Task-08]()   | |  |
+| [Task-09]()   | | |
