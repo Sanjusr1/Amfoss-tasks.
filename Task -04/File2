@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+int k;
+scanf("%d",&k);
+int rm[1000],rc =0 ;
+while(scanf("%d",&rm[rc]) != EOF){
+    rc++;
+}
+for (int i = 0; i <rc;i++){
+    int count = 0;
+    for (int j =0 ;j<rc;j++){
+        if (rm[i] == rm[j]){
+            count++;
+        }
+    }
+    if (count ==1){
+        printf("%d\n",rm[i]);
+        
+    }
+}
+    return 0;
+}
