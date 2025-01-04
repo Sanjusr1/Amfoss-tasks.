@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+<link rel="stylesheet" href="styles.css"> 
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Macondo&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+<style>
+   /* Style for Drum Kit Buttons */
+   .drum {
+      border: none;
+      color: maroon;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 30px;
+      margin: 10px;
+      cursor: pointer;
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+      border-radius: 8px; /* Rounded corners */
+      transition: box-shadow 0.3s, transform 0.2s ease-in-out; /* Smooth hover effect */
+    }
+
+
+  .w { background-color: #04AA6D; } /* Green */
+    .a { background-color: #008CBA; } /* Blue */
+    .s { background-color: #f44336; } /* Red */
+    .d { background-color: #e7e7e7; color: black; } /* Gray */
+    .j { background-color: #555555; } /* Black */
+    .k { background-color: #FFA500; } /* Orange */
+    .l { background-color: #000280; } /* navyblue */
+</style>
+</head>
+
+<body>
+
+  <h1 id="title">Drum 🥁 Kit</h1>
+  <div class="set">
+    <button class="w drum">w</button>
+    <button class="a drum">a</button>
+    <button class="s drum">s</button>
+    <button class="d drum">d</button>
+    <button class="j drum">j</button>
+    <button class="k drum">k</button>
+    <button class="l drum">l</button>
+  </div>
+<audio id="sound1" src="sounds/crash.mp3"></audio>
+<audio id="sound2" src="sounds/kick-bass.mp3"></audio>
+<audio id="sound3" src="sounds/snare.mp3"></audio>
+<audio id="sound4" src="sounds/tom-1.mp3"></audio>
+<audio id="sound5" src="sounds/tom-2.mp3"></audio>
+<audio id="sound6" src="sounds/tom-3.mp3"></audio>
+<audio id="sound7" src="sounds/tom-4.mp3"></audio>
+
+<script src="index.js"></script>
+</body>
+
+</html>
+
