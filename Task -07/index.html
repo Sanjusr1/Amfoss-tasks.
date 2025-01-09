@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta  http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css" />
-        <title>Weather Extension</title>
-    
-    </head>
-    <body>
-        <div id="container">
-          <div id="clock"></div>
-          <div id="content">
-            <div id="city"></div>
-            <div><img id="weather-image" src="" alt="weather image" /></div>
-            <div id="temp"></div>
-            <div id="weather"></div>
-          </div>
-          <div id="loading-container">
-            <div class="loading">
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-      </body>
-      <script src="script.js"></script>
-    
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Extension</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="weather-container">
+    <h2>Weather Extension</h2>
+    <input type="text" id="city" placeholder="Enter city" />
+    <button id="search-btn">Search</button>
+
+    <div id="weather-info">
+      <img id="weather-icon" alt="Weather Icon" style="display: none;" />
+      <div id="temp-div"></div>
+      <div id="weather-details"></div>
+    </div>
+
+    <div id="hourly-forecast"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
 </html>

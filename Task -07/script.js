@@ -1,83 +1,90 @@
-let city = document.getElementById("city");
-let content = document.getElementById("content");
-let weatherImage = document.getElementById("weather-image");
-let temp = document.getElementById("temp");
-let weather = document.getElementById("weather");
-let loadingContainer = document.getElementById("loading-container");
-let clock = document.getElementById("clock");
-let latitude = 0;
-let longitude = 0;
+document.getElementById('search-btn').addEventListener('click', getWeather);
 
-function pad(num, size) {
-  let s = num + "";
-  while (s.length < size) s = "0" + s;
-  return s;
-}
-let currentDate;
+function getWeather() {
+  const apiKey = 'a019db8ba5a7109cca0fff16f1a1cc8d';
+  const city = document.getElementById('city').value;
 
-setInterval(() => {
-  currentDate = new Date();
-
-  const hours = (currentDate && pad(currentDate.getHours(), 2)) || "";
-  const minutes = (currentDate && pad(currentDate.getMinutes(), 2)) || "";
-  const seconds = (currentDate && pad(currentDate.getSeconds(), 2)) || "";
-  const date = (currentDate && pad(currentDate.getDate(), 2)) || "";
-  const month = (currentDate && pad(currentDate.getMonth() + 1, 2)) || "";
-  const year = (currentDate && currentDate.getFullYear()) || "";
-  clock.innerHTML = `<span>
-      ${hours}:${minutes}:${seconds}
-    </span>
-    <span>
-        ${date}/${month}/${year}
-    </span>`;
-}, 500);
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      (_position) => {
-        latitude = _position.coords.latitude;
-        longitude = _position.coords.longitude;
-        fetchWeatherData(latitude, longitude);
-      },
-      () => {
-        alert("The system didn't approve location");
-      }
-    );
-  } else {
-    alert("The system didn't approve location");
+  if (!city) {
+    alert('Please enter a city');
+    return;
   }
-}
-getLocation();
 
-function fetchWeatherData(lat, lon) {
-  fetch(
-    `https://weatherbit-v1-mashape.p.rapidapi.com/current?&lat=${lat}&lon=${lon}`,
-    {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "bb3232600dmshc6074583ada17bbp15777ejsn2bebd0784d75",
-        "X-RapidAPI-Host": "weatherbit-v1-mashape.p.rapidapi.com",
-        "Content-Type": "application/json",
-      },
-    }
-  )
-    .then((res) => {
-      return res.json();
-    })
-    .then((weatherData) => {
-      const formattedData = weatherData.data[0];
-      const weatherInfo = formattedData.weather;
-      loadingContainer.style.opacity = 0;
-      content.style.opacity = 1;
-      weather.innerText = weatherInfo.description;
-      city.innerText = `${formattedData.city_name}, ${formattedData.country_code}`;
-      temp.innerText = `${Math.ceil(formattedData.app_temp)}°C`;
-      weatherImage.src = `https://www.weatherbit.io/static/img/icons/${weatherInfo.icon}.png`;
-    })
-    .catch((e) => {
-      console.log(e);
+  const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+  const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+
+  console.log('City:', city);
+  console.log('Current Weather URL:', currentWeatherUrl);
+  console.log('Forecast URL:', forecastUrl);
+
+  fetch(currentWeatherUrl)
+    .then(response => response.json())
+    .then(data => displayWeather(data))
+    .catch(error => {
+      console.error('Error fetching current weather data:', error);
+      alert('Error fetching current weather data. Please try again.');
+    });
+
+  fetch(forecastUrl)
+    .then(response => response.json())
+    .then(data => displayHourlyForecast(data.list))
+    .catch(error => {
+      console.error('Error fetching hourly forecast data:', error);
+      alert('Error fetching hourly forecast data. Please try again.');
     });
 }
 
+function displayWeather(data) {
+  const tempDivInfo = document.getElementById('temp-div');
+  const weatherInfoDiv = document.getElementById('weather-info');
+  const weatherIcon = document.getElementById('weather-icon');
+  const hourlyForecastDiv = document.getElementById('hourly-forecast');
 
+  weatherInfoDiv.innerHTML = '';
+  hourlyForecastDiv.innerHTML = '';
+  tempDivInfo.innerHTML = '';
+
+  if (data.cod === '404') {
+    weatherInfoDiv.innerHTML = `<p>${data.message}</p>`;
+  } else {
+    const cityName = data.name;
+    const temperature = Math.round(data.main.temp - 273.15);
+    const description = data.weather[0].description;
+    const iconCode = data.weather[0].icon;
+    const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
+
+    tempDivInfo.innerHTML = `<p>${temperature}°C</p>`;
+    weatherInfoDiv.innerHTML = `<p>${cityName}</p><p>${description}</p>`;
+    weatherIcon.src = iconUrl;
+    weatherIcon.alt = description;
+    weatherIcon.style.display = 'block';
+  }
+}
+
+function displayHourlyForecast(hourlyData) {
+  if (!hourlyData || hourlyData.length === 0) {
+    document.getElementById('hourly-forecast').innerHTML = '<p>No hourly data available.</p>';
+    return;
+  }
+
+  const hourlyForecastDiv = document.getElementById('hourly-forecast');
+  hourlyForecastDiv.innerHTML = ''; // Clear existing data
+  const next24Hours = hourlyData.slice(0, 8);
+
+  next24Hours.forEach(item => {
+    const dateTime = new Date(item.dt * 1000);
+    const hour = dateTime.getHours();
+    const temperature = Math.round(item.main.temp - 273.15);
+    const iconCode = item.weather[0].icon;
+    const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
+
+    const hourlyItemHtml = `
+      <div class="hourly-item">
+        <span>${hour}:00</span>
+        <img src="${iconUrl}" alt="Hourly Weather Icon">
+        <span>${temperature}°C</span>
+      </div>
+    `;
+
+    hourlyForecastDiv.innerHTML += hourlyItemHtml;
+  });
+}
