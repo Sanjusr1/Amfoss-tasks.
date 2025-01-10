@@ -75,3 +75,21 @@ tempElement.addEventListener("click", function(){
     weather.temperature.unit = "celsius"
   }
 })
+
+function updateTime(timeClass) {
+  const timeElement = document.querySelector(`.${timeClass}`);
+  
+  function setTime() {
+    const now = new Date();
+    const formattedTime = now.toLocaleTimeString();
+    timeElement.textContent = ` ${formattedTime}`;
+  }
+
+  setTime(); 
+  setInterval(setTime, 1000); 
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  updateTime('time');
+});
+

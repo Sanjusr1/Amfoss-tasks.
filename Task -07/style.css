@@ -77,9 +77,18 @@ body{
     margin-top: 0px;
     margin-left: 60px;
 }
-
-
-
+.time{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.loading {
+    font-style: italic;
+    color: gray;
+    margin-left: 60px;
+  }
+  
+ 
 
 
 
