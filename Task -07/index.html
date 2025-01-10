@@ -2,25 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather Extension</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="font/Rimouski.css">
+  <link rel="stylesheet" href="style.css">  
 </head>
 <body>
-  <div id="weather-container">
-    <h2>Weather Extension</h2>
-    <input type="text" id="city" placeholder="Enter city" />
-    <button id="search-btn">Search</button>
-
-    <div id="weather-info">
-      <img id="weather-icon" alt="Weather Icon" style="display: none;" />
-      <div id="temp-div"></div>
-      <div id="weather-details"></div>
+    <div class="app-title">
+      <p>Weather</p>
     </div>
-
-    <div id="hourly-forecast"></div>
+    <div class="notification"></div>
+    
+      <div class="weather-icon">
+        <img src="icons/unknown.png" alt="">
+      </div>
+      <div class="temperature-value">
+        <p>- °<span>C</span></p>
+      </div>
+      <div class="temperature-description">
+        <p>-</p>
+      </div>
+      <div class="location">
+        <p>-</p>
+      </div>
+    </div>
   </div>
-  
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

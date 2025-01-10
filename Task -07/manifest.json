@@ -1,28 +1,16 @@
 {
-    "name": "Weather Extension",
-    "version": "1.0",
-    "description": "A Chrome Weather Extension",
+    "name": "Weather App",
+    "description": "Displays weather according to user's location",
+    "version": "0.0.1",
     "manifest_version": 3,
-    "permissions": [
-      "activeTab",
-      "scripting"
-    ],
-    "host_permissions": [
-      "https://api.openweathermap.org/*"
-    ],
-    "icons": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon.png"
-    },
     "action": {
-      "default_popup": "index.html",
-      "default_icon": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-      }
-      
-    }
+      "default_popup": "./index.html",
+      "default_icon": "icons/icon.png"
+    },
+    "icons": {
+      "16": "icons/icon.png",
+      "64": "icons/icon.png",
+      "128": "icons/icon.png"
+    },
+    "permissions": ["activeTab", "geolocation"]
   }
-  
