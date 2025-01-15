@@ -3,7 +3,6 @@ import pytesseract
 import matplotlib.pyplot as plt
 
 def show_image(img, title="Image"):
-    """Helper function to display images at various steps."""
     plt.imshow(img, cmap='gray')
     plt.title(title)
     plt.axis('off')
@@ -18,26 +17,26 @@ def evaluate_expression_from_image(image_path):
         return f"Error loading image: {e}"
 
     img = img.convert("L")  
-    show_image(img, "Grayscale Image")  # Show grayscale image for debugging
+    show_image(img, "Grayscale Image")  
 
-    img = img.filter(ImageFilter.MedianFilter(1))  # Use a smaller filter size
-    show_image(img, "Median Filtered Image")  # Show median filtered image
+    img = img.filter(ImageFilter.MedianFilter(1))  
+    show_image(img, "Median Filtered Image") 
 
-    img = img.resize((img.width * 2, img.height * 2), Image.Resampling.LANCZOS)  # Updated
-    show_image(img, "Resized Image")  # Show resized image
+    img = img.resize((img.width * 2, img.height * 2), Image.Resampling.LANCZOS) 
+    show_image(img, "Resized Image")  
 
     img = ImageEnhance.Contrast(img).enhance(3.0)  
-    show_image(img, "High Contrast Image")  # Show high contrast image
+    show_image(img, "High Contrast Image")  
 
     img = img.point(lambda p: p > 180 and 255)  
-    show_image(img, "Thresholded Image")  # Show thresholded image
+    show_image(img, "Thresholded Image")  
 
-    img = img.filter(ImageFilter.SHARPEN)  # Sharpen the image
-    show_image(img, "Sharpened Image")  # Show sharpened image
+    img = img.filter(ImageFilter.SHARPEN)  
+    show_image(img, "Sharpened Image")  
 
     try:
         extracted_text = pytesseract.image_to_string(img, config='--psm 6').strip()  
-        print(f"Extracted Text: '{extracted_text}'")  # Debugging: print the raw text
+        print(f"Extracted Text: '{extracted_text}'")  
     except Exception as e:
         return f"Error during OCR: {e}"
 
