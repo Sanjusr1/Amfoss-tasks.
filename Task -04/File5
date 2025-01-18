@@ -1,0 +1,85 @@
+#include <stdio.h>
+#include <string.h>
+
+#define SIZE 10
+
+int solve(char grid[SIZE][SIZE], char words[10][SIZE], int idx, int total);
+void display(char grid[SIZE][SIZE]);
+
+int main() {
+    char grid[SIZE][SIZE], input[100], words[10][SIZE];
+    for (int i = 0; i < SIZE; i++) 
+        scanf("%s", grid[i]);
+    scanf("%s", input);
+
+    int count = 0;
+    char *token = strtok(input, ";");
+    while (token) {
+        strcpy(words[count++], token);
+        token = strtok(NULL, ";");
+    }
+
+    if (solve(grid, words, 0, count)) display(grid);
+    else printf("No solution exists\n");
+
+    return 0;
+}
+
+int canFit(char grid[SIZE][SIZE], char *word, int r, int c, int dir) {
+    int len = strlen(word);
+    if ((dir == 0 && c + len > SIZE) || (dir == 1 && r + len > SIZE)) return 0;
+    for (int i = 0; i < len; i++) {
+        char cell = dir ? grid[r + i][c] : grid[r][c + i];
+        if (cell != '-' && cell != word[i]) return 0;
+    }
+    return 1;
+}
+
+void setWord(char grid[SIZE][SIZE], char *word, int r, int c, int dir, char backup[SIZE]) {
+    int len = strlen(word);
+    for (int i = 0; i < len; i++) {
+        backup[i] = dir ? grid[r + i][c] : grid[r][c + i];
+        if (dir) grid[r + i][c] = word[i];
+        else grid[r][c + i] = word[i];
+    }
+}
+
+void resetWord(char grid[SIZE][SIZE], char *word, int r, int c, int dir, char backup[SIZE]) {
+    for (int i = 0; i < strlen(word); i++) {
+        if (dir) grid[r + i][c] = backup[i];
+        else grid[r][c + i] = backup[i];
+    }
+}
+
+int solve(char grid[SIZE][SIZE], char words[10][SIZE], int idx, int total) {
+    if (idx == total) return 1;
+
+    char temp[SIZE];
+    for (int r = 0; r < SIZE; r++) {
+        for (int c = 0; c < SIZE; c++) {
+            if (grid[r][c] == '-' || grid[r][c] == words[idx][0]) {
+                if (canFit(grid, words[idx], r, c, 0)) {
+                    setWord(grid, words[idx], r, c, 0, temp);
+                    if (solve(grid, words, idx + 1, total)) return 1;
+                    resetWord(grid, words[idx], r, c, 0, temp);
+                }
+                if (canFit(grid, words[idx], r, c, 1)) {
+                    setWord(grid, words[idx], r, c, 1, temp);
+                    if (solve(grid, words, idx + 1, total)) return 1;
+                    resetWord(grid, words[idx], r, c, 1, temp);
+                }
+            }
+        }
+    }
+    return 0;
+}
+
+void display(char grid[SIZE][SIZE]) {
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            printf("%c", grid[i][j]);
+        }
+        printf("\n");
+    }
+}
+
