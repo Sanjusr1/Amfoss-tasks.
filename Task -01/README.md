@@ -32,23 +32,30 @@ And the spell used to fight this creature is "Riddikulus"
      
 ### Commands used:
         git branch -a: to find all the git branches present 
-        git 
+        git checkout <remote branch > < new branch>: chnages to the new branch 
+         
         
         
 ## PART - 5
   This part was the toughest among all the other parts , in this we have to go through all the commits made in this task 
- so in this task we are teleported to graveyard and we have to find ourselves back to out. and after going though all the commits which were commited by amfoss mentors the spell that we got is "Priori Incantatem" and the code is:
+ so in this task we are teleported to graveyard and we have to find ourselves back to out. and after going though all the commits which were commited by amfoss mentors 0the spell that we got is "Priori Incantatem" and the code is: aGVGaW5hbFNwZWxs
                                        
-
-
-
+### Commands used:
+          git log : to checkout all the commits that were done to the task
+          git show --name-only <commit-hash> : gives the details of a specific commit 
+  
+  After entering all the codes into finalcode.txt we'll continue rest process.
 ## PART-6
+The final code i.e finalcode.txt is aHR0cHM6Ly9naXRodWIuY29tL1RoZUh1bnRzbWFuNC9UaGVGaW5hbFNwZWxs
+
 In this part :
              After decoding the finalcode.txt with the bash command "echo <base64 encodedString> | base64 --decode" ,the decoded code leads to a github link 
 
  github link : https://github.com/TheHuntsman4/TheFinalSpell
 
 And cloned this repo to terminal and foundout the TheOneThatEndsItAll.txt and TheOneThatEndsItAll.py files
+
+## TERMOINAL COMMA
 
 
 
