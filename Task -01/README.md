@@ -55,8 +55,24 @@ In this part :
 
 And cloned this repo to terminal and foundout the TheOneThatEndsItAll.txt and TheOneThatEndsItAll.py files
 
-## TERMOINAL COMMA
-
+## TERMINAL COMMANDS:
+    cd <dirctory_path> : changes the current directory to specified path
+    ls : lists of files present in a directory 
+    python xx.py: runs or prints the python text codes
+    cat <specified file >: it prints the output of <specified file> to the terminal and with this u can only read the file , you can't change the file contents using this .
+    mv <xx.txt> <yy.txt> : it renames the name of the text file form xx to yy
+    mv <file.txt> /path/to/destination/ : it moves the file.txt to the folder given in the path 
+    echo : this also used to display the text on terminal
+    echo <base64enocodedstring> | base64 --decode : this is used to decode an encoded string .
+## GIT COMMANDS:
+      git clone: clones the repo to your local device
+      git branch -a: displays all the branches present in that repo, including both local and remote branches.
+      git checkout <remote branch > < new branch>: chnages to the new branch 
+      git add : Adds files to the staging area, preparing them to be included in the next commit.
+      git status : Displays the status of your working directory and staging area.
+      git commit -m"":it keeps track of the staged changes in the repository. The -m flag allows you to include a message describing the changes
+      git push :sends the committed changes to the git repo 
+      
 
 
 
