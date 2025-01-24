@@ -1,4 +1,4 @@
-## PIXELATED PROBLEM SOLVER:
+## PIXELATED PROBLEM SOLVER
             In this task we were told to write a code in which it can take input from a  png file that contains a simple arthimatic expression and run it and give output for that expression 
             And to do that we need to have some important libraries intaslled such as:
              pillow (PIL) this is used for image processing , and in this task it acts as preprocesser by extracting accuracy from the given image, this includes in conversion of grayscale , noise reductio, resizes the image , enhance contrast ,threshold the image and finally sharpens the image .
