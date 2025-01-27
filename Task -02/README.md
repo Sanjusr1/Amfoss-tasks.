@@ -16,4 +16,6 @@ Tesseract's primary purpose is to extract text from images. It converts text pre
                    
   After setting up the python environment write a code in which it has to contain some functions for reading an image , preprossing an image and sepatare function for checking the arthmetic enquation then gives the output according to that .
                           
-           
+#### MY REVIEW :
+ This task was a bit new to me since this was my first time to write a code in which it takes the input directly from a png file . 
+ 
