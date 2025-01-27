@@ -1,5 +1,7 @@
 ## Drum kit !
+In this task there is a semi coded web-page and we have to add some css and html codes to it .
 To do this first we have to clone the given repo to our local device and then 
+
 
 ### PART -1:
 For this part we need to setup our vs code and link the given styles.css and index.js files to our index.html file 
@@ -14,3 +16,6 @@ We need to add the onclick funtion for those buttons , so that when they are cli
 In this with the help of css we have to add backgroud colour, box colour,box shader also and have to do some styling to our drumkit .
 We can add fonts to our buttons and all the content present on the website .
 We can get access to these fonts on google fonts and are easy to use .
+
+#### MY REVIEW :
+From this task I have learnt many things like how to add songs to an webpage and many css and html stuff , it was a nice experience adding code and styling a webpage . 
