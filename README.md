@@ -27,11 +27,9 @@ My task statistics are as shown-
 | Task List | Description | Status |
 | :-:       | :-:         | :-:    |
 | [Task-00](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-00)   | Install Linux | Completed |
-| [Task-01](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-01)   | The Command Line Cup
- | Completed |
+| [Task-01](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-01)   | The Command Line Cup| Completed |
 | [Task-02](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-02)    |Pixelated Problem Solver | Completed |
-| [Task-03](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-03)   |Beat The Buttons
- |Completed |
+| [Task-03](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-03)   |Beat The Buttons |Completed |
 | [Task-04](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-04)   | Code The Puzzles| Completed |
 | [Task-05](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-05) |  Pokémon Rescue | Completed |
 | [Task-06](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-06)    | Flutter JumpStart| Completed |
