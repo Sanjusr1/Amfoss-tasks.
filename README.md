@@ -2,19 +2,20 @@
 
 - SELF INTRO :
 
-     Hello everyone,I am Sanju sri Dugyala , I am from  CSE in specialization of AI.I am interested in coding and developing new programs and I’d love to get more involved into coding and exploring new stuff , I can say that I am a quick learner and won't make my flaws stop me , I'll try to get motivated and learm from my mistakes. And I am interested in music and games 
+     Hello everyone,I am Sanju sri Dugyala , I am from  CSE in specialization of AI.I am interested in coding and developing new programs and I’d love to get more involved in coding and exploring new stuff .I can say that I am a quick learner and won't let my flaws stop me , I'm very motivated and learm from my mistakes.Other interesting things about me are that I like  listening to music , watching anime , games and coding .
 
 - WHY SHOULD WE CHOOSE YOU ?:
 
-    You should choose me because I am a tech enthusiast and passionate about coding and developing programs . I am self learner and I strive to enhance my skills, which leads me to overcome my boundaries and do more. I can assure that I will give my full efforts in contributing to club along with enchancing my skills, trying to learn and grow everyday.
+   You should choose me because I am a tech enthusiast and passionate about coding and developing programs . I am a self learner and I persistently strive to enhance my skills, which leads me to overcome my boundaries and do more. Even without a coding background I worked hard to finish the tasks assigned diligently. I can assure that I will give my full efforts in contributing to the club along with enhancing my skills, trying to learn and grow everyday.
 
 - HOW DO YOU INTEND TO TO CONTRIBUTE BACK TO THE CLUB ?:
     
-   I would show an active participation and would contribute ,best of my abilities to club , and would mentor my juniors and anyone who wants my help and would continuously try to learn more and do more , I am sure that I can be one of the promising member of the club .
+   I will show an active participation and will contribute by sharing back what I’ve learnt to the best of my abilities. If given an opportunity I would mentor my juniors and anyone who wants my help. I am also willing to actively contribute to any training sessions or knowledge sharing sessions organized by the club. Through the help of my peers I not only want to contribute to the club but also to the open source community.
+
 
 - WHAT ARE YOUR FIELDS OF INTEREST , AND HOW DO YOU PLAN ON WORKING ON THEM ?
 
-   My fields of interest is AI and software development which is also one of the reasons for my btech branch , I like how AI makes our lives easy and solve many complex problems with ease.And I am interested in coding and developing projects . And to make them true I would work hard and plan on gaining more knowledge on AI and developing projects, I also try to do more projects on my field and try to get a deeper and a detailed knowledge about them . 
+  My fields of interest are AI and software development which is also one of the reasons for my btech branch. I am interested in coding, developing projects/applications and I like how AI makes our lives easy and solve many complex problems with ease. Which makes me very much interested in applying AI concepts to development and making efficient working applications. And to make them true I would work hard and plan on gaining more knowledge via resources available online and in the club. 
 not only them I am also interested in how ai used in the area of cyber like how it combines traditional cybersecurity skills with artificial intelligence to improve threat detection, prevention, and response.
 
 
@@ -26,12 +27,14 @@ My task statistics are as shown-
 | Task List | Description | Status |
 | :-:       | :-:         | :-:    |
 | [Task-00](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-00)   | Install Linux | Completed |
-| [Task-01]()   |  |  |
-| [Task-02]()    | |  |
-| [Task-03]()   | | |
-| [Task-04]()   |  |  |
-| [Task-05]() |   |  |
-| [Task-06]()    | |  |
-| [Task-07]()  |  |  |
+| [Task-01](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-01)   | The Command Line Cup
+ | Completed |
+| [Task-02](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-02)    |Pixelated Problem Solver | Completed |
+| [Task-03](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-03)   |Beat The Buttons
+ |Completed |
+| [Task-04](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-04)   | Code The Puzzles| Completed |
+| [Task-05](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-05) |  Pokémon Rescue | Completed |
+| [Task-06](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-06)    | Flutter JumpStart| Completed |
+| [Task-07](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-07)  |  Weather Guardian | Completed |
 | [Task-08]()   | |  |
 | [Task-09]()   | | |
