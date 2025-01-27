@@ -73,6 +73,8 @@ And cloned this repo to terminal and foundout the TheOneThatEndsItAll.txt and Th
       git commit -m"":it keeps track of the staged changes in the repository. The -m flag allows you to include a message describing the changes
       git push :sends the committed changes to the git repo 
       
+#### MY REVIEW :
+This task was an intersting one , during this task I have learnt various git and teminal commands .
 
 
 
