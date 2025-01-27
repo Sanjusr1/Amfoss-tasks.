@@ -21,3 +21,6 @@ For this we have to create a separate file named captured and add the path of th
 In this we have to display all the captured pokemon on a new window that is similar to search_window from before with it's name and image 
 
 To do that we have to create a new window and add it's path to search_window.py file , in that new window we can add some basic buttons like "next" and "previous" using QPushButton and QLabel , then add a function in which when we click on display it has to show the images which are stored in capture file , to do this we have to add the path of capture file to displaywindow and with the help of QPixmap , the image will display on the new window 
+
+#### MY REVIEW:
+Completing a semi-coded app was a new thing to me , during this task I had to learn many new things and even though it took time to do all this, it turned out to be nice ,and the outcome was as expected . 
