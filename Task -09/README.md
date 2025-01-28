@@ -7,6 +7,6 @@ And also got to know about various topics about what a kernel is ,how it plays a
 
 And in this task we have to build a kernel using rust , we were given a kernel code in rust which has errors in it. We are supposed to debug and fix the code.
 
-This task was very intersting to do , but time constraint I could only install required packages(rust nightly, etc ) and setup. I started reading the code and understand it and could not complete it in given time.
+This task was very intersting to do , but due to time constraint I could only install required packages(rust nightly, etc ) and setup. I started reading the code and understand it and could not complete it in given time.
 
 
