@@ -5,8 +5,8 @@ While doing this task I got to know that Kernel acts as an intermediary between 
 
 And also got to know about various topics about what a kernel is ,how it plays an role in system stability , performance and security .
 
-And in this task we have to build a kernel using rust , in this we were given with a rust kernel with errors and we were supposed to decode it and fix all the errors present in it . 
+And in this task we have to build a kernel using rust , we were given a kernel code in rust which has errors in it. We are supposed to debug and fix the code.
 
-This task was very intersting to do , but due to time constraint I did till installing all the required packages and  setting up rust (installing rust nightly ) and was in middle of fixing the code , but was unable to complete it .
+This task was very intersting to do , but time constraint I could only install required packages(rust nightly, etc ) and setup. I started reading the code and understand it and could not complete it in given time.
 
 
