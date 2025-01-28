@@ -35,4 +35,4 @@ My task statistics are as shown-
 | [Task-06](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-06)    | Flutter JumpStart| Completed |
 | [Task-07](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-07)  |  Weather Guardian | Completed |
 | [Task-08](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-08)   |Compute Shader | Started |
-| [Task-09](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-09)   |Operation Kernel |Pending |
+| [Task-09](https://github.com/Sanjusr1/Amfoss-tasks./tree/main/Task%20-09)   |Operation Kernel |Started |
