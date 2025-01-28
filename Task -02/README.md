@@ -12,10 +12,10 @@ Tesseract's primary purpose is to extract text from images. It converts text pre
       Here the role of ocr is that it is a software tool that converts different types of documents into editable and searchable data by recognizing the text eith in the images.                 
        pytesseract is a Python wrapper for the Tesseract OCR engine .  (Optical Character Recognition), it makes Tesseract easily accessible in python projects without needing to handle command-line interactions.
        
- For these things to run we need to create an python vertual environment , i.e venv and add all the above mentioned required libraries .  
+ For these things to run we need to create an python virtual environment , i.e venv and add all the above mentioned required libraries .  
                    
-  After setting up the python environment write a code in which it has to contain some functions for reading an image , preprossing an image and sepatare function for checking the arthmetic enquation then gives the output according to that .
+  After setting up the python environment write a code in which it has to contain some functions for reading an image , pre-prossing an image and sepatare function for checking the arithmetic enquation then gives the output according to that .
                           
 #### MY REVIEW :
- This task was a bit new to me since this was my first time to write a code in which it takes the input directly from a png file . 
+ This task was a bit new to me since this was my first time to write a code in which it takes the input directly from a png file . In this task as mentioned above I wrote a code in which it has to take input from a png file and give output .
  
